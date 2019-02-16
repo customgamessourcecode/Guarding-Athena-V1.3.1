@@ -1,0 +1,67 @@
+"Quests"
+{
+    "KillKoboldLord"
+    {
+        "triggerType"       "npc"
+        "triggerName"       "bounty_hunter"
+        "frontRequireType"  ""
+        "frontRequire"      ""
+        "questType"         "kill"
+        "targetName"        "kobold_lord"
+        "demandCount"       "3"
+        "rewardType"        "item"
+        "rewardContent"     "item_zhanqi"
+    }
+    "KillHellBeast"
+    {
+        "triggerType"       "npc"
+        "triggerName"       "bounty_hunter"
+        "frontRequireType"  "quest"
+        "frontRequire"      "KillKoboldLord"
+        "questType"         "kill"
+        "targetName"        "hell_beast"
+        "demandCount"       "2"
+        "rewardType"        "item"
+        "rewardContent"     "item_xiongpi"
+    }
+    "KillAcientGolem"
+    {
+        "triggerType"       "npc"
+        "triggerName"       "bounty_hunter"
+        "frontRequireType"  "quest"
+        "frontRequire"      "KillHellBeast"
+        "questType"         "kill"
+        "targetName"        "ancient_golem"
+        "demandCount"       "1"
+        "rewardType"        "item"
+        "rewardContent"     "item_hexin"
+    }
+    "KillFireDemon"
+    {
+        "triggerType"       "npc"
+        "triggerName"       "cuihua"
+        "frontRequireType"  ""
+        "frontRequire"      ""
+        "questType"         "kill"
+        "targetName"        "boss_fire_demon"
+        "demandCount"       "1"
+        "rewardType"        "item"
+        "rewardContent"     "item_yunshizhaohuan"
+    }
+    "Trial"
+    {
+        "triggerType"       "npc"
+        "triggerName"       "bajie"
+        "frontRequireType"  ""
+        "frontRequire"      ""
+        "questType"         "kill"
+        "targetName"        "trial_creep"
+        "demandCount"       "1"
+        "rewardType"        "item"
+        "rewardContent"     "item_zhuanshu"
+        "dialog"
+        {
+            "1"             "item_trial"
+        }
+    }
+}
